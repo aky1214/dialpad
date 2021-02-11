@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid bg-dark cont">
+        <div class="container mx-auto bg-light dialer">
+            <div id="output"></div>
+            <div class="keypad">
+                <div class="row">
+                    <button type="button" value="1" class="digit col-sm" onclick="getId(this.id)" onmousedown="buttonPress(this.id)" onmouseup="buttonRelease(this.id)" id="1">1
+                    <div class="sub" style="visibility: hidden;"> na</div>
+                    </button>
+                    <button type="button" value="2" class="digit col-sm" onclick="getId(this.id)" onmousedown="buttonPress(this.id)" onmouseup="buttonRelease(this.id)" id="2">2
+                        <div class="sub">ABC</div>
+                    </button>
+                    <button type="button" value="3" class="digit col-sm" onclick="getId(this.id)" onmousedown="buttonPress(this.id)" onmouseup="buttonRelease(this.id)" id="3">3
+                        <div class="sub">DEF</div>
+                    </button>
+                </div>
+                <div class="row">
+                    <button type="button" value="4" class="digit col-sm" onclick="getId(this.id)" onmousedown="buttonPress(this.id)" onmouseup="buttonRelease(this.id)" id="4">4
+                        <div class="sub">GHI</div>
+                    </button>
+                    <button type="button" value="5" class="digit col-sm" onclick="getId(this.id)" onmousedown="buttonPress(this.id)" onmouseup="buttonRelease(this.id)" id="5">5
+                        <div class="sub">JKL</div>
+                    </button>
+                    <button type="button" value="6" class="digit col-sm" onclick="getId(this.id)" onmousedown="buttonPress(this.id)" onmouseup="buttonRelease(this.id)" id="6">6
+                        <div class="sub">MNO</div>
+                    </button>
+                </div>
+                <div class="row">
+                    <button type="button" value="7" class="digit col-sm" onclick="getId(this.id)" onmousedown="buttonPress(this.id)" onmouseup="buttonRelease(this.id)" id="7">7
+                        <div class="sub">PQRS</div>
+                    </button>
+                    <button type="button" value="8" class="digit col-sm" onclick="getId(this.id)" onmousedown="buttonPress(this.id)" onmouseup="buttonRelease(this.id)" id="8">8
+                        <div class="sub">TUV</div>
+                    </button>
+                    <button type="button" value="9" class="digit col-sm" onclick="getId(this.id)" onmousedown="buttonPress(this.id)" onmouseup="buttonRelease(this.id)" id="9">9
+                        <div class="sub">WXYZ</div>
+                    </button>
+                </div>
+                <div class="row">
+                    <button type="button" value="*" class="digit col-sm" onclick="getId(this.id)" onmousedown="buttonPress(this.id)" onmouseup="buttonRelease(this.id)" id="*">*
+                    </button>
+                    <button type="button" value="0" class="digit col-sm" onclick="getId(this.id)" onmousedown="buttonPress(this.id)" onmouseup="buttonRelease(this.id)" id="0">0
+                    </button>
+                    <button type="button" value="#" class="digit col-sm" onclick="getId(this.id)" onmousedown="buttonPress(this.id)" onmouseup="buttonRelease(this.id)" id="#">#
+                    </button>
+                </div>
+                <div class="botrow"><button id="contacts" onmousedown="buttonPress(this.id)" onmouseup="buttonRelease(this.id)"><i class="bi bi-star dig"></i></button>
+                    <button id="call"><i class="bi bi-telephone-fill" aria-hidden="true"></i></button>
+                    <button id="clear" onclick="clearLast()" onmousedown="buttonPress(this.id)" onmouseup="buttonRelease(this.id)"><i class="bi bi-arrow-left dig"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
